@@ -52,13 +52,13 @@ const rows: Row[] = [
   { abbr: "PUB/PR", title: "PUBLIC RECORDS", desc: "Bankruptcies, Tax Liens, Judgments, Civil Suits, Public Filings.", icon: Landmark, color: "bg-[#ffa500]", ring: "border-[#ffa500]" },
   { abbr: "INQ/IQ", title: "ALL INQUIRIES", desc: "Hard Inquiries, Soft Inquiries, All types from all sources.", icon: Search, color: "bg-[#7b5804]", ring: "border-[#7b5804]" },
   { abbr: "SLCC", title: "STUDENT LOAN CHARGE-OFFS/COLLECTIONS", desc: "Defaulted student loans, charged-off accounts, collections.", icon: GraduationCap, color: "bg-[#e23671]", ring: "border-[#e23671]" },
-  { abbr: "MCC", title: "MEDICAL CHARGE-OFFS/COLLECTIONS", desc: "Medical debt sent to collections or charged-off.", icon: Stethoscope, color: "bg-[#696b6b]", ring: "border-[#696b6b]" },
+  { abbr: "MCC", title: "MEDICAL CHARGE-OFFS/COLLECTIONS", desc: "Medical debt sent to collections or charged-off.", icon: Stethoscope, color: "bg-[#D41B31]", ring: "border-[#D41B31]" },
   { abbr: "AOCC", title: "ALL OTHER CHARGE-OFFS/COLLECTIONS", desc: "Credit cards, personal loans, retail cards, auto loans, utilities, etc.", icon: DollarSign, color: "bg-[#d41b31]", ring: "border-[#d41b31]" },
   { abbr: "SLDL 3+", title: "STUDENT LOAN DEROGATORY LATES (3+)", desc: "3 or more late payments on student loans.", icon: CalendarDays, color: "bg-[#7618d3]", ring: "border-[#7618d3]" },
-  { abbr: "MDL 3+", title: "MEDICAL DEROGATORY LATES (3+)", desc: "3 or more late payments on medical accounts.", icon: CalendarDays, color: "bg-[#696b6b]", ring: "border-[#696b6b]" },
+  { abbr: "MDL 3+", title: "MEDICAL DEROGATORY LATES (3+)", desc: "3 or more late payments on medical accounts.", icon: CalendarDays, color: "bg-[#06aae6ee]", ring: "border-[#06aae6ee]" },
   { abbr: "AODL 3+", title: "ALL OTHER DEROGATORY LATES (3+)", desc: "3 or more late payments on non-student, non-medical accounts.", icon: CalendarDays, color: "bg-[#17b0e8]", ring: "border-[#17b0e8]" },
   { abbr: "SLDL 1-2", title: "STUDENT LOAN DELINQUENCY LATES (1-2)", desc: "1 to 2 late payments on student loans.", icon: CalendarDays, color: "bg-[#ff66c4]", ring: "border-[#ff66c4]" },
-  { abbr: "MDL 1-2", title: "MEDICAL DELINQUENCY LATES (1-2)", desc: "1 to 2 late payments on medical accounts.", icon: CalendarDays, color: "bg-[#696b6b]", ring: "border-[#696b6b]" },
+  { abbr: "MDL 1-2", title: "MEDICAL DELINQUENCY LATES (1-2)", desc: "1 to 2 late payments on medical accounts.", icon: CalendarDays, color: "bg-[#a437ec]", ring: "border-[#a437ec]" },
   { abbr: "AODL 1-2", title: "ALL OTHER DELINQUENCY LATES (1-2)", desc: "1 to 2 late payments on non-student, non-medical accounts.", icon: CalendarDays, color: "bg-[#a437ec]", ring: "border-[#a437ec]" },
 ];
 
