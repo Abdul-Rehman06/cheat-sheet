@@ -43,23 +43,23 @@ type Row = {
   title: string;
   desc: string;
   icon: React.ComponentType<{ className?: string }>;
-  color: string; // tailwind gradient / border color group
+  color: string;
   ring: string;
 };
 
 const rows: Row[] = [
-  { abbr: "PI", title: "PERSONAL INFORMATION", desc: "Name, SSN, Date of Birth, Address, Employment information, etc.", icon: User, color: "from-purple-700 to-purple-500", ring: "shadow-[0_0_25px_rgba(168,85,247,0.55)] border-purple-500" },
-  { abbr: "PUB/PR", title: "PUBLIC RECORDS", desc: "Bankruptcies, Tax Liens, Judgments, Civil Suits, Public Filings.", icon: Landmark, color: "from-orange-600 to-orange-400", ring: "shadow-[0_0_25px_rgba(249,115,22,0.55)] border-orange-500" },
-  { abbr: "INQ/IQ", title: "ALL INQUIRIES", desc: "Hard Inquiries, Soft Inquiries, All types from all sources.", icon: Search, color: "from-yellow-700 to-yellow-500", ring: "shadow-[0_0_25px_rgba(234,179,8,0.55)] border-yellow-500" },
-  { abbr: "SLCC", title: "STUDENT LOAN CHARGE-OFFS/COLLECTIONS", desc: "Defaulted student loans, charged-off accounts, collections.", icon: GraduationCap, color: "from-pink-600 to-pink-400", ring: "shadow-[0_0_25px_rgba(236,72,153,0.55)] border-pink-500" },
-  { abbr: "MCC", title: "MEDICAL CHARGE-OFFS/COLLECTIONS", desc: "Medical debt sent to collections or charged-off.", icon: Stethoscope, color: "from-gray-500 to-gray-300", ring: "shadow-[0_0_25px_rgba(156,163,175,0.55)] border-gray-400" },
-  { abbr: "AOCC", title: "ALL OTHER CHARGE-OFFS/COLLECTIONS", desc: "Credit cards, personal loans, retail cards, auto loans, utilities, etc.", icon: DollarSign, color: "from-red-600 to-red-400", ring: "shadow-[0_0_25px_rgba(239,68,68,0.55)] border-red-500" },
-  { abbr: "SLDL 3+", title: "STUDENT LOAN DEROGATORY LATES (3+)", desc: "3 or more late payments on student loans.", icon: CalendarDays, color: "from-purple-700 to-purple-500", ring: "shadow-[0_0_25px_rgba(168,85,247,0.55)] border-purple-500" },
-  { abbr: "MDL 3+", title: "MEDICAL DEROGATORY LATES (3+)", desc: "3 or more late payments on medical accounts.", icon: CalendarDays, color: "from-gray-500 to-gray-300", ring: "shadow-[0_0_25px_rgba(156,163,175,0.55)] border-gray-400" },
-  { abbr: "AODL 3+", title: "ALL OTHER DEROGATORY LATES (3+)", desc: "3 or more late payments on non-student, non-medical accounts.", icon: CalendarDays, color: "from-blue-600 to-blue-400", ring: "shadow-[0_0_25px_rgba(59,130,246,0.55)] border-blue-500" },
-  { abbr: "SLDL 1-2", title: "STUDENT LOAN DELINQUENCY LATES (1-2)", desc: "1 to 2 late payments on student loans.", icon: CalendarDays, color: "from-pink-600 to-pink-400", ring: "shadow-[0_0_25px_rgba(236,72,153,0.55)] border-pink-500" },
-  { abbr: "MDL 1-2", title: "MEDICAL DELINQUENCY LATES (1-2)", desc: "1 to 2 late payments on medical accounts.", icon: CalendarDays, color: "from-gray-500 to-gray-300", ring: "shadow-[0_0_25px_rgba(156,163,175,0.55)] border-gray-400" },
-  { abbr: "AODL 1-2", title: "ALL OTHER DELINQUENCY LATES (1-2)", desc: "1 to 2 late payments on non-student, non-medical accounts.", icon: CalendarDays, color: "from-purple-700 to-purple-500", ring: "shadow-[0_0_25px_rgba(168,85,247,0.55)] border-purple-500" },
+  { abbr: "PI", title: "PERSONAL INFORMATION", desc: "Name, SSN, Date of Birth, Address, Employment information, etc.", icon: User, color: "bg-[#800080]", ring: "border-[#800080]" },
+  { abbr: "PUB/PR", title: "PUBLIC RECORDS", desc: "Bankruptcies, Tax Liens, Judgments, Civil Suits, Public Filings.", icon: Landmark, color: "bg-[#ffa500]", ring: "border-[#ffa500]" },
+  { abbr: "INQ/IQ", title: "ALL INQUIRIES", desc: "Hard Inquiries, Soft Inquiries, All types from all sources.", icon: Search, color: "bg-[#7b5804]", ring: "border-[#7b5804]" },
+  { abbr: "SLCC", title: "STUDENT LOAN CHARGE-OFFS/COLLECTIONS", desc: "Defaulted student loans, charged-off accounts, collections.", icon: GraduationCap, color: "bg-[#e23671]", ring: "border-[#e23671]" },
+  { abbr: "MCC", title: "MEDICAL CHARGE-OFFS/COLLECTIONS", desc: "Medical debt sent to collections or charged-off.", icon: Stethoscope, color: "bg-[#696b6b]", ring: "border-[#696b6b]" },
+  { abbr: "AOCC", title: "ALL OTHER CHARGE-OFFS/COLLECTIONS", desc: "Credit cards, personal loans, retail cards, auto loans, utilities, etc.", icon: DollarSign, color: "bg-[#d41b31]", ring: "border-[#d41b31]" },
+  { abbr: "SLDL 3+", title: "STUDENT LOAN DEROGATORY LATES (3+)", desc: "3 or more late payments on student loans.", icon: CalendarDays, color: "bg-[#7618d3]", ring: "border-[#7618d3]" },
+  { abbr: "MDL 3+", title: "MEDICAL DEROGATORY LATES (3+)", desc: "3 or more late payments on medical accounts.", icon: CalendarDays, color: "bg-[#696b6b]", ring: "border-[#696b6b]" },
+  { abbr: "AODL 3+", title: "ALL OTHER DEROGATORY LATES (3+)", desc: "3 or more late payments on non-student, non-medical accounts.", icon: CalendarDays, color: "bg-[#17b0e8]", ring: "border-[#17b0e8]" },
+  { abbr: "SLDL 1-2", title: "STUDENT LOAN DELINQUENCY LATES (1-2)", desc: "1 to 2 late payments on student loans.", icon: CalendarDays, color: "bg-[#ff66c4]", ring: "border-[#ff66c4]" },
+  { abbr: "MDL 1-2", title: "MEDICAL DELINQUENCY LATES (1-2)", desc: "1 to 2 late payments on medical accounts.", icon: CalendarDays, color: "bg-[#696b6b]", ring: "border-[#696b6b]" },
+  { abbr: "AODL 1-2", title: "ALL OTHER DELINQUENCY LATES (1-2)", desc: "1 to 2 late payments on non-student, non-medical accounts.", icon: CalendarDays, color: "bg-[#a437ec]", ring: "border-[#a437ec]" },
 ];
 
 function Dot({ color, active, onClick }: { color: "red" | "green"; active: boolean; onClick: () => void }) {
@@ -73,12 +73,11 @@ function Dot({ color, active, onClick }: { color: "red" | "green"; active: boole
       transition={{ duration: 0.4 }}
       className={`relative h-10 w-10 md:h-12 md:w-12 rounded-full border-2 transition-all ${
         isRed
-          ? `bg-gradient-to-br from-red-500 to-red-700 border-red-300 ${active ? "shadow-[0_0_25px_8px_rgba(239,68,68,0.7)]" : "shadow-[0_0_12px_2px_rgba(239,68,68,0.5)]"}`
-          : `bg-gradient-to-br from-green-400 to-green-600 border-green-300 ${active ? "shadow-[0_0_25px_8px_rgba(34,197,94,0.7)]" : "shadow-[0_0_12px_2px_rgba(34,197,94,0.5)]"}`
+          ? `bg-red-600 border-red-500`
+          : `bg-green-500 border-green-400`
       }`}
       aria-label={isRed ? "Don't Attack" : "Attack"}
     >
-      <span className="absolute inset-1 rounded-full bg-white/25 blur-[2px]" style={{ maskImage: "radial-gradient(circle at 30% 25%, black 0%, transparent 55%)" }} />
       {active && (
         <motion.span
           initial={{ scale: 0, opacity: 0 }}
@@ -101,15 +100,21 @@ function CheatSheet() {
     setChoices((p) => ({ ...p, [i]: p[i] === c ? null : c }));
 
   return (
-    <div className="min-h-screen bg-[#050814] text-white overflow-x-hidden">
+    <div className="min-h-screen bg-[#050814] text-white overflow-x-hidden relative">
       {/* subtle chart bg */}
-      <div className="pointer-events-none fixed inset-0 opacity-30 bg-[radial-gradient(ellipse_at_top,rgba(30,64,175,0.35),transparent_60%)]" />
-      <div className="pointer-events-none fixed inset-0 opacity-[0.06] bg-[linear-gradient(rgba(56,189,248,0.4)_1px,transparent_1px),linear-gradient(90deg,rgba(56,189,248,0.4)_1px,transparent_1px)] bg-[size:48px_48px]" />
+      <div className="pointer-events-none fixed inset-0 opacity-30 bg-[radial-gradient(ellipse_at_top,rgba(30,64,175,0.35),transparent_60%)] z-0" />
+      <div className="pointer-events-none fixed inset-0 opacity-[0.06] bg-[linear-gradient(rgba(56,189,248,0.4)_1px,transparent_1px),linear-gradient(90deg,rgba(56,189,248,0.4)_1px,transparent_1px)] bg-[size:48px_48px] z-0" />
 
-      <main className="relative mx-auto max-w-6xl px-4 py-8 md:py-12">
+      {/* BIG BACKGROUND LOGO */}
+      <div className="pointer-events-none fixed inset-0 flex items-center justify-center z-0">
+        <img src="/logo.png" alt="Background Logo" className="w-[90vw] md:w-[60vw] opacity-[0.05] object-contain" />
+      </div>
+
+      <main className="relative mx-auto max-w-6xl px-4 py-8 md:py-12 z-10">
         {/* HEADER */}
         <header className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6 items-start mb-6">
-          <div>
+          <div className="flex flex-col items-start">
+            <img src="/logo.png" alt="Logo" className="h-16 md:h-20 object-contain mb-4" />
             <motion.h1
               initial={{ opacity: 0, y: -30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -142,20 +147,12 @@ function CheatSheet() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 }}
-            className="rounded-2xl border-2 border-cyan-500/60 bg-black/60 p-5 shadow-[0_0_35px_rgba(6,182,212,0.35)] min-w-[220px]"
+            className="rounded-2xl border-2 border-cyan-500/60 bg-black/60 p-5 shadow-[0_0_35px_rgba(6,182,212,0.35)] min-w-[220px] flex flex-col items-center justify-center"
           >
-            <div className="flex justify-center mb-2">
-              <Gauge className="h-9 w-9 text-cyan-400" />
-            </div>
-            <div className="text-center font-black text-lg md:text-xl leading-tight">
-              <div className="text-white">BETTER DATA</div>
-              <div className="text-green-400 drop-shadow-[0_0_8px_rgba(34,197,94,0.7)]">BETTER SCORES</div>
-              <div className="text-white">BETTER LIFE</div>
-            </div>
-            <div className="mt-2 flex justify-center gap-1">
-              {[0, 1, 2, 3, 4].map((i) => (
-                <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400 drop-shadow-[0_0_6px_rgba(250,204,21,0.7)]" />
-              ))}
+            <img src="/Paid-in-full.png" alt="Paid in Full QR Code" className="w-24 h-24 md:w-28 md:h-28 object-contain mb-3 bg-white p-1 rounded-lg" />
+            <div className="text-center font-black text-sm md:text-base leading-tight">
+              <div className="text-white">SCAN TO JOIN</div>
+              <div className="text-yellow-400 drop-shadow-[0_0_8px_rgba(250,204,21,0.7)]">PAID IN FULL</div>
             </div>
           </motion.div>
         </header>
@@ -201,7 +198,7 @@ function CheatSheet() {
                     <Dot color="green" active={choices[i] === "green"} onClick={() => set(i, "green")} />
                   </div>
 
-                  <div className={`rounded-lg border-2 bg-gradient-to-br ${r.color} ${r.ring} py-2 md:py-3 text-center`}>
+                  <div className={`rounded-lg border-2 ${r.color} ${r.ring} py-2 md:py-3 text-center`}>
                     <span className="font-black text-sm md:text-lg tracking-tight text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]">
                       {r.abbr}
                     </span>
@@ -255,14 +252,14 @@ function CheatSheet() {
             <h3 className="font-black tracking-wide mb-3">CODE KEY</h3>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-                <div className="h-7 w-7 rounded-full bg-gradient-to-br from-red-500 to-red-700 shadow-[0_0_12px_rgba(239,68,68,0.7)] border-2 border-red-300" />
+                <div className="h-7 w-7 rounded-full bg-red-600 border-2 border-red-500" />
                 <div>
                   <div className="font-black text-sm">DON'T ATTACK</div>
                   <div className="text-[11px] text-gray-400">Leave these items alone.</div>
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <div className="h-7 w-7 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-[0_0_12px_rgba(34,197,94,0.7)] border-2 border-green-300" />
+                <div className="h-7 w-7 rounded-full bg-green-500 border-2 border-green-400" />
                 <div>
                   <div className="font-black text-sm">ATTACK</div>
                   <div className="text-[11px] text-gray-400">These items may be disputed if inaccurate, incomplete, or unverifiable.</div>

@@ -8,6 +8,7 @@ export const getRouter = () => {
   const router = createRouter({
     routeTree,
     context: { queryClient },
+    basepath: import.meta.env.PROD ? "/cheat-sheet" : "/",
     scrollRestoration: true,
     defaultPreloadStaleTime: 0,
   });
