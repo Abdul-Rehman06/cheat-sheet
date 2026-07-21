@@ -107,14 +107,14 @@ function CheatSheet() {
 
       {/* BIG BACKGROUND LOGO */}
       <div className="pointer-events-none fixed inset-0 flex items-center justify-center z-0">
-        <img src="/logo.png" alt="Background Logo" className="w-[90vw] md:w-[60vw] opacity-[0.05] object-contain" />
+        <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Background Logo" className="w-[90vw] md:w-[60vw] opacity-[0.05] object-contain" />
       </div>
 
       <main className="relative mx-auto max-w-6xl px-4 py-8 md:py-12 z-10">
         {/* HEADER */}
         <header className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6 items-start mb-6">
           <div className="flex flex-col items-start">
-            <img src="/logo.png" alt="Logo" className="h-16 md:h-20 object-contain mb-4" />
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Logo" className="h-16 md:h-20 object-contain mb-4" />
             <motion.h1
               initial={{ opacity: 0, y: -30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -149,7 +149,7 @@ function CheatSheet() {
             transition={{ delay: 0.2 }}
             className="rounded-2xl border-2 border-cyan-500/60 bg-black/60 p-5 shadow-[0_0_35px_rgba(6,182,212,0.35)] min-w-[220px] flex flex-col items-center justify-center"
           >
-            <img src="/Paid-in-full.png" alt="Paid in Full QR Code" className="w-24 h-24 md:w-28 md:h-28 object-contain mb-3 bg-white p-1 rounded-lg" />
+            <img src={`${import.meta.env.BASE_URL}Paid-in-full.png`} alt="Paid in Full QR Code" className="w-24 h-24 md:w-28 md:h-28 object-contain mb-3 bg-white p-1 rounded-lg" />
             <div className="text-center font-black text-sm md:text-base leading-tight">
               <div className="text-white">SCAN TO JOIN</div>
               <div className="text-yellow-400 drop-shadow-[0_0_8px_rgba(250,204,21,0.7)]">PAID IN FULL</div>
