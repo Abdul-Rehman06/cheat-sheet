@@ -58,7 +58,7 @@ const rows: Row[] = [
   { abbr: "MDL 3+", title: "MEDICAL DEROGATORY LATES (3+)", desc: "3 or more late payments on medical accounts.", icon: CalendarDays, color: "bg-[#696b6b]", ring: "border-[#696b6b]" },
   { abbr: "AODL 3+", title: "ALL OTHER DEROGATORY LATES (3+)", desc: "3 or more late payments on non-student, non-medical accounts.", icon: CalendarDays, color: "bg-[#17b0e8]", ring: "border-[#17b0e8]" },
   { abbr: "SLDL 1-2", title: "STUDENT LOAN DELINQUENCY LATES (1-2)", desc: "1 to 2 late payments on student loans.", icon: CalendarDays, color: "bg-[#ff66c4]", ring: "border-[#ff66c4]" },
-  { abbr: "MDL 1-2", title: "MEDICAL DELINQUENCY LATES (1-2)", desc: "1 to 2 late payments on medical accounts.", icon: CalendarDays, color: "bg-[#696b6b]", ring: "border-[#a437ec]" },
+  { abbr: "MDL 1-2", title: "MEDICAL DELINQUENCY LATES (1-2)", desc: "1 to 2 late payments on medical accounts.", icon: CalendarDays, color: "bg-[#696b6b]", ring: "border-[#696b6b]" },
   { abbr: "AODL 1-2", title: "ALL OTHER DELINQUENCY LATES (1-2)", desc: "1 to 2 late payments on non-student, non-medical accounts.", icon: CalendarDays, color: "bg-[#a437ec]", ring: "border-[#a437ec]" },
 ];
 
